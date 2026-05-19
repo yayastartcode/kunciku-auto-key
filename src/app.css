@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand-50:  #fff8eb;
+  --color-brand-100: #ffeac4;
+  --color-brand-200: #ffd285;
+  --color-brand-300: #ffb547;
+  --color-brand-400: #ff9a1c;
+  --color-brand-500: #f57b06;
+  --color-brand-600: #cb5b03;
+  --color-brand-700: #a14507;
+  --color-brand-800: #82370c;
+  --color-brand-900: #6b2e0e;
+
+  --color-ink-50:  #f6f7f9;
+  --color-ink-100: #ebedf2;
+  --color-ink-200: #d2d6e0;
+  --color-ink-300: #a8b0c2;
+  --color-ink-400: #76819a;
+  --color-ink-500: #54607a;
+  --color-ink-600: #3e4a63;
+  --color-ink-700: #2c364c;
+  --color-ink-800: #1c2438;
+  --color-ink-900: #0f152a;
+
+  --font-display: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: 'cv11', 'ss01';
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-ring {
+  0%   { transform: scale(0.9); opacity: 0.7; }
+  70%  { transform: scale(1.4); opacity: 0; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+.animate-fade-up { animation: fade-up 0.7s ease-out both; }
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.shine {
+  background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.5) 50%, transparent 70%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+a, button { -webkit-tap-highlight-color: transparent; }
