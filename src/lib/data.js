@@ -106,6 +106,39 @@ export const testimonials = [
   }
 ];
 
+export const gallery = [
+  {
+    src: '/gallery/01.svg',
+    alt: 'Teknisi Kunciku Auto Key membuka kunci mobil tanpa merusak pintu',
+    caption: 'Buka kunci mobil di lokasi'
+  },
+  {
+    src: '/gallery/02.svg',
+    alt: 'Duplikat kunci immobilizer mobil dengan alat programmer',
+    caption: 'Duplikat kunci immobilizer'
+  },
+  {
+    src: '/gallery/03.svg',
+    alt: 'Pemasangan kunci motor baru di tempat',
+    caption: 'Service kunci motor'
+  },
+  {
+    src: '/gallery/04.svg',
+    alt: 'Membuka kunci pintu rumah tanpa merusak daun pintu',
+    caption: 'Buka kunci rumah & kos'
+  },
+  {
+    src: '/gallery/05.svg',
+    alt: 'Membuka brankas yang lupa kombinasi',
+    caption: 'Buka brankas & lemari besi'
+  },
+  {
+    src: '/gallery/06.svg',
+    alt: 'Toko Kunciku Auto Key di Jalan Soebrantas Panam Pekanbaru',
+    caption: 'Toko Panam Pekanbaru'
+  }
+];
+
 export const faqs = [
   {
     q: 'Apakah benar-benar buka 24 jam?',

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Buka Brankas">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+    <pattern id="p" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M0 0h32v32" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <rect width="800" height="600" fill="url(#p)"/>
+  <g transform="translate(360 200)" stroke="white" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M3 4h18v16H3zM11 12a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" transform="scale(3.5)"/>
+  </g>
+  <g font-family="Plus Jakarta Sans, system-ui, sans-serif" fill="white" text-anchor="middle">
+    <text x="400" y="470" font-size="34" font-weight="800" letter-spacing="-0.5">Buka Brankas</text>
+    <text x="400" y="510" font-size="20" font-weight="500" opacity="0.85">Kunciku Auto Key &middot; Pekanbaru</text>
+  </g>
+</svg>

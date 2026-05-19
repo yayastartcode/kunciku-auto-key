@@ -5,6 +5,7 @@
     trust,
     process,
     testimonials,
+    gallery,
     faqs
   } from '$lib/data.js';
   import WhatsAppFloat from '$lib/WhatsAppFloat.svelte';
@@ -39,6 +40,7 @@
     <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
       <a href="#layanan" class="hover:text-slate-900">Layanan</a>
       <a href="#proses" class="hover:text-slate-900">Cara Kerja</a>
+      <a href="#galeri" class="hover:text-slate-900">Galeri</a>
       <a href="#testimoni" class="hover:text-slate-900">Testimoni</a>
       <a href="#faq" class="hover:text-slate-900">FAQ</a>
       <a href="#kontak" class="hover:text-slate-900">Kontak</a>
@@ -313,6 +315,51 @@
           </figure>
         {/each}
       </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY ==================== -->
+  <section id="galeri" class="py-16 sm:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        <div class="max-w-2xl">
+          <p class="text-xs uppercase tracking-[0.2em] font-bold text-brand-600">Galeri</p>
+          <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">
+            Dokumentasi pekerjaan & toko kami.
+          </h2>
+          <p class="mt-3 text-slate-600">
+            Foto teknisi, alat, dan hasil kerja Kunciku Auto Key di Pekanbaru.
+          </p>
+        </div>
+        <WhatsAppButton variant="light" size="md" message="Halo, boleh minta foto contoh hasil kerja sebelumnya?">
+          Tanya foto lain
+        </WhatsAppButton>
+      </div>
+
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+        {#each gallery as g, i}
+          <figure
+            class="group relative overflow-hidden rounded-2xl ring-1 ring-slate-200 bg-slate-100 aspect-[4/3]"
+          >
+            <img
+              src={g.src}
+              alt={g.alt}
+              loading={i < 2 ? 'eager' : 'lazy'}
+              decoding="async"
+              class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+            <figcaption
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/85 via-slate-950/40 to-transparent p-3 sm:p-4 text-white"
+            >
+              <p class="text-xs sm:text-sm font-semibold drop-shadow">{g.caption}</p>
+            </figcaption>
+          </figure>
+        {/each}
+      </div>
+
+      <p class="mt-6 text-xs text-slate-500">
+        Foto ditampilkan sebagai placeholder ilustratif. Foto asli pekerjaan & toko akan menyusul.
+      </p>
     </div>
   </section>
 
