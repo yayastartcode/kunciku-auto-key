@@ -336,15 +336,15 @@
         </WhatsAppButton>
       </div>
 
-      <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
         {#each gallery as g, i}
           <figure
-            class="group relative overflow-hidden rounded-2xl ring-1 ring-slate-200 bg-slate-100 aspect-[4/3]"
+            class="group relative overflow-hidden rounded-2xl ring-1 ring-slate-200 bg-slate-100 aspect-[3/4]"
           >
             <img
               src={g.src}
               alt={g.alt}
-              loading={i < 2 ? 'eager' : 'lazy'}
+              loading={i < 3 ? 'eager' : 'lazy'}
               decoding="async"
               class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
             />
@@ -358,7 +358,7 @@
       </div>
 
       <p class="mt-6 text-xs text-slate-500">
-        Foto ditampilkan sebagai placeholder ilustratif. Foto asli pekerjaan & toko akan menyusul.
+        Dokumentasi pekerjaan & toko Kunciku Auto Key di Pekanbaru.
       </p>
     </div>
   </section>

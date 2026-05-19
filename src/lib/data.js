@@ -107,36 +107,16 @@ export const testimonials = [
 ];
 
 export const gallery = [
-  {
-    src: '/gallery/01.svg',
-    alt: 'Teknisi Kunciku Auto Key membuka kunci mobil tanpa merusak pintu',
-    caption: 'Buka kunci mobil di lokasi'
-  },
-  {
-    src: '/gallery/02.svg',
-    alt: 'Duplikat kunci immobilizer mobil dengan alat programmer',
-    caption: 'Duplikat kunci immobilizer'
-  },
-  {
-    src: '/gallery/03.svg',
-    alt: 'Pemasangan kunci motor baru di tempat',
-    caption: 'Service kunci motor'
-  },
-  {
-    src: '/gallery/04.svg',
-    alt: 'Membuka kunci pintu rumah tanpa merusak daun pintu',
-    caption: 'Buka kunci rumah & kos'
-  },
-  {
-    src: '/gallery/05.svg',
-    alt: 'Membuka brankas yang lupa kombinasi',
-    caption: 'Buka brankas & lemari besi'
-  },
-  {
-    src: '/gallery/06.svg',
-    alt: 'Toko Kunciku Auto Key di Jalan Soebrantas Panam Pekanbaru',
-    caption: 'Toko Panam Pekanbaru'
-  }
+  { src: '/gallery/photos/01.webp', alt: 'Pekerjaan ahli kunci Kunciku Auto Key', caption: 'Layanan di lokasi pelanggan' },
+  { src: '/gallery/photos/02.webp', alt: 'Layanan duplikat & buka kunci', caption: 'Duplikat & buka kunci' },
+  { src: '/gallery/photos/03.webp', alt: 'Tim teknisi Kunciku Auto Key', caption: 'Teknisi siap dipanggil' },
+  { src: '/gallery/photos/04.webp', alt: 'Service kunci kendaraan', caption: 'Service kunci kendaraan' },
+  { src: '/gallery/photos/05.webp', alt: 'Pekerjaan ahli kunci Pekanbaru', caption: 'Pekerjaan di Pekanbaru' },
+  { src: '/gallery/photos/06.webp', alt: 'Buka kunci tanpa merusak pintu', caption: 'Buka kunci tanpa rusak' },
+  { src: '/gallery/photos/07.webp', alt: 'Alat & peralatan ahli kunci', caption: 'Peralatan lengkap' },
+  { src: '/gallery/photos/08.webp', alt: 'Layanan ahli kunci 24 jam', caption: 'Layanan 24 jam' },
+  { src: '/gallery/photos/09.webp', alt: 'Toko Kunciku Auto Key Panam', caption: 'Toko Panam, Pekanbaru' },
+  { src: '/gallery/photos/10.webp', alt: 'Garansi & kepuasan pelanggan', caption: 'Garansi pekerjaan' }
 ];
 
 export const faqs = [
